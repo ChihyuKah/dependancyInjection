@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\DeliciousPuppy;
+use App\Entity\Capitalize;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 
 /**
- * @method DeliciousPuppy|null find($id, $lockMode = null, $lockVersion = null)
- * @method DeliciousPuppy|null findOneBy(array $criteria, array $orderBy = null)
- * @method DeliciousPuppy[]    findAll()
- * @method DeliciousPuppy[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Capitalize|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Capitalize|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Capitalize[]    findAll()
+ * @method Capitalize[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
 class DeliciousPuppyRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, DeliciousPuppy::class);
+        parent::__construct($registry, Capitalize::class);
     }
 
     // /**
-    //  * @return DeliciousPuppy[] Returns an array of DeliciousPuppy objects
+    //  * @return Capitalize[] Returns an array of Capitalize objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class DeliciousPuppyRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?DeliciousPuppy
+    public function findOneBySomeField($value): ?Capitalize
     {
         return $this->createQueryBuilder('d')
             ->andWhere('d.exampleField = :val')

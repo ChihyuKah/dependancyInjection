@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\DeliciousPuppyRepository")
  */
-class DeliciousPuppy
+class Capitalize implements transform
 {
     /**
      * @ORM\Id()
